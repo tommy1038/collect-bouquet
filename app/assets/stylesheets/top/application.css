@@ -1,0 +1,123 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *
+ *= require font-awesome
+ */
+
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+  background-color: #EEEEEE;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 5px;
+  width: 90%;
+  background-color: #fff;
+  column-count: 3;
+  column-gap: 0;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    column-count: 2;
+  }
+}
+
+.grid {
+  padding: 5px;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.text {
+  padding: 20px;
+  background-color: #e0f2f1;
+}
+
+.pic {
+  padding: 5px 0;
+  background-color: #222;
+  color: #fff;
+}
+
+.grid > * {
+  border-radius: 8px;
+}
+
+.pic > *:not(img) {
+  padding: 0 20px;
+}
+
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 14px;
+  line-height: 50px;
+  z-index: 99;
+}
+
+#page-top a {
+  background: #A8A8A8;
+  text-decoration: none;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: block;
+  border-radius: 50px;
+  opacity: 0.9;
+  transition: all .3s ease;
+}
+
+#page-top a:hover {
+  text-decoration: none;
+  opacity: .5;
+}
+
+.footer {
+	font-size: 10px;
+	text-align: center;
+	color: #fff;
+	padding: 20px 0;
+	background-color: #666666;
+}
+
+.gridtxt{
+	font-size: 12px;
+	font-weight: bold;
+	color: #666666;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
