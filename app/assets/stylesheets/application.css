@@ -13,4 +13,5 @@
  *= require_tree .
  *= require_self
  *= require @fortawesome/fontawesome-free/scss/fontawesome
+ *= require lightbox2/src/css/lightbox
  */

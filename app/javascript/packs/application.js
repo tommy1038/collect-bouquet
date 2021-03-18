@@ -9,6 +9,7 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import '@fortawesome/fontawesome-free/js/all'
 import 'jquery'
+import 'lightbox2/src/js/lightbox'
 import 'script.js'
 
 Rails.start()
