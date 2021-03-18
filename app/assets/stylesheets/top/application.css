@@ -3,6 +3,8 @@
 
 body {
   background-color: #EEEEEE;
+  margin: 0px;
+  font-family: "Noto Sans CJK JP", "NotoSansCJKjp", "FontAwesome", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
 }
 
 * {
@@ -89,6 +91,26 @@ img {
   opacity: .5;
 }
 
+.induction {
+	text-align: center;
+	font-size: 12px;
+	margin-bottom: 14px;
+	letter-spacing: 1.5px;
+	color: #666666;
+}
+
+.outer-line-it-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 60px;
+}
+
+
+.line-it-button {
+	transform: scale(1.8);
+}
+
 .footer {
 	font-size: 10px;
 	text-align: center;
@@ -99,9 +121,14 @@ img {
 
 .gridtxt{
 	font-size: 12px;
-	font-weight: bold;
 	color: #666666;
 	text-align: center;
 	margin-top: 5px;
 	margin-bottom: 20px;
+	letter-spacing: 1.2px;
+}
+
+.in-gridtxt {
+	font-size: 16px;
+	font-weight: bold;
 }
