@@ -4,6 +4,7 @@ class BouquetS3 < S3
       image = resource.bucket(bucket_name).object(item['key'])
       image_url = image.presigned_url(:get)
       {
+        key: item['key'],
         image: image_url
       }
     end

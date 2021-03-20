@@ -9,6 +9,7 @@ class SecretBouquetS3 < S3
       name = json['name']
       score = json['score']
       {
+        key: item.key,
         image: image_url,
         name: name,
         score: score

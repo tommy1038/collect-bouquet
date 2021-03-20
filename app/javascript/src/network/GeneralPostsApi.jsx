@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 
 export const GeneralPostsApi = () => {
-  const [state, setstate] = useState();
+  const [state, setstate] = useState([]);
   const [page, setPage] = useState(0);
   useEffect(() => {
     axios
@@ -13,8 +13,13 @@ export const GeneralPostsApi = () => {
         },
       })
       .then((response) => {
-        console.log(response.data.posts);
-        setstate(response.data.posts);
+        setstate((prev) => {
+          const prevKeys = prev.map((prevPosts) => prevPosts.key);
+          const post = response.data.posts.filter(
+            (post) => !prevKeys.includes(post.key)
+          );
+          return prev.concat(post);
+        });
       })
       .catch((error) => {
         console.log({ error });
