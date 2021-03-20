@@ -8,7 +8,7 @@ export const GeneralPostsApi = () => {
     axios
       .get('/api/s3', {
         params: {
-          size: 1,
+          size: 5,
           offset: page * 10,
         },
       })
