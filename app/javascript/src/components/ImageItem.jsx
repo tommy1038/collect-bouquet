@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const ImageItem = () => (
+export const ImageItem = ({ image }) => (
   <div className="gridbig">
     <a data-lightbox="image" className="grid">
-      <img src="https://www.beiz.jp/images_T/cherry-blossom/cherry-blossom_00579.jpg" />
+      <img src={image} />
     </a>
     <div className="gridtxt">
       <div className="in-gridtxt">

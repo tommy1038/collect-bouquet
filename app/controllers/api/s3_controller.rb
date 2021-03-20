@@ -3,7 +3,7 @@ module Api
     def index
       s3 = BouquetS3.new
       result = s3.posts
-      render json: { status: 'SUCCESS', message: result }
+      render json: {posts: result}
     end
   end
 end
