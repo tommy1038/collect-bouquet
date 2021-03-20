@@ -3,7 +3,9 @@
 
 body {
   background-color: #EEEEEE;
+  /*▼スタイルのリセット追加*/
   margin: 0px;
+  /*▼フォントの指定追加*/
   font-family: "Noto Sans CJK JP", "NotoSansCJKjp", "FontAwesome", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
 }
 
@@ -91,26 +93,6 @@ img {
   opacity: .5;
 }
 
-.induction {
-	text-align: center;
-	font-size: 12px;
-	margin-bottom: 14px;
-	letter-spacing: 1.5px;
-	color: #666666;
-}
-
-.outer-line-it-button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 60px;
-}
-
-
-.line-it-button {
-	transform: scale(1.8);
-}
-
 .footer {
 	font-size: 10px;
 	text-align: center;
@@ -119,6 +101,7 @@ img {
 	background-color: #666666;
 }
 
+/*▼letter-spacingを新規追加した気がする*/
 .gridtxt{
 	font-size: 12px;
 	color: #666666;
@@ -128,7 +111,18 @@ img {
 	letter-spacing: 1.2px;
 }
 
+/*▼点数表示のスタイル追加*/
 .in-gridtxt {
 	font-size: 16px;
 	font-weight: bold;
+}
+
+/*▼画像の新しいクラス指定*/
+.gridbig {
+  padding: 5px;
+  margin-right: 5px;
+  margin-left: -5px;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
 }
