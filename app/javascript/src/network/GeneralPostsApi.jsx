@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
-export const getImages = () => {
+export const GeneralPostsApi = () => {
   const [state, setstate] = useState([]);
 
   useEffect(() => {
