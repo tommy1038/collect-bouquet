@@ -1,6 +1,7 @@
 class SecretBouquetS3 < S3
-  def posts
-    client.list_objects(bucket: bucket_name, prefix: 'result/', max_keys: 5).contents.map do |item|
+  def posts(size = 10, offset = 0)
+    client.list_objects(bucket: bucket_name, prefix: 'result/',
+                        max_keys: (size.to_i + offset.to_i)).contents.map do |item|
       json = client.get_object(bucket: bucket_name, key: item.key)
       json = JSON.parse(json.body.read)
       image = resource.bucket(bucket_name).object(json['image'])
