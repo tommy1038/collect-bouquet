@@ -1,19 +1,15 @@
 import React from 'react';
 
 import { ImageItem } from '../components/ImageItem';
-import { ImageItemCopy } from '../components/ImageItemCopy';
-import { getImages } from '../network/Api';
+import { GeneralPostsApi } from '../network/GeneralPostsApi';
+
 export const Top = () => {
-  const posts = getImages();
+  const posts = GeneralPostsApi();
   return (
     <>
       {posts.map((post, index) => (
         <ImageItem key={index} image={post.image} />
       ))}
-      <ImageItemCopy />
-      <ImageItemCopy />
-      <ImageItemCopy />
-      <ImageItemCopy />
     </>
   );
 };

@@ -1,4 +1,4 @@
-class BouquetS3 < S3
+class SecretBouquetS3 < S3
   def exist_s3_check
     client.list_buckets.buckets.map(&:name)
   end
