@@ -8,14 +8,15 @@ export const Top = () => {
   const [posts, setPage] = GeneralPostsApi();
 
   const handleScroll = throttle(() => {
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     if (
-      window.innerHeight + document.documentElement.scrollTop !==
+      window.innerHeight + scrollTop <
       document.documentElement.offsetHeight
     ) {
       return;
     }
     setPage((prev) => prev + 1);
-  }, 200);
+  }, 500);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
