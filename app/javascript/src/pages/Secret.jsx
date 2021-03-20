@@ -10,7 +10,7 @@ export const Secret = () => {
   const handleScroll = throttle(() => {
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     if (
-      window.innerHeight + scrollTop !==
+      window.innerHeight + scrollTop + 50 !==
       document.documentElement.offsetHeight
     ) {
       return;
