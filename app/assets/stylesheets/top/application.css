@@ -88,6 +88,10 @@ img {
   transition: all .3s ease;
 }
 
+.zoom-img {
+  border-radius: 8px;
+}
+
 #page-top a:hover {
   text-decoration: none;
   opacity: .5;
@@ -120,8 +124,6 @@ img {
 /*▼画像の新しいクラス指定*/
 .gridbig {
   padding: 5px;
-  margin-right: 5px;
-  margin-left: -5px;
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   break-inside: avoid;
