@@ -12,10 +12,12 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "jquery": "^3.6.0",
     "lightbox2": "^2.11.3",
+    "lodash": "^4.17.21",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-medium-image-zoom": "^4.3.1",
+    "react-infinite-scroller": "^1.2.4",
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",
