@@ -1,11 +1,5 @@
 class SecretBouquetS3 < S3
-  def exist_s3_check
-    client.list_buckets.buckets.map(&:name)
-  end
-
   def posts
-    bucket_name = 'collect-bouquet-bucket'
-
     client.list_objects(bucket: bucket_name, prefix: 'result/', max_keys: 5).contents.map do |item|
       json = client.get_object(bucket: bucket_name, key: item.key)
       json = JSON.parse(json.body.read)

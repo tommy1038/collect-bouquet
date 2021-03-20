@@ -1,7 +1,7 @@
 require 'aws-sdk-s3'
 
 class S3
-  attr_accessor :client, :resource
+  attr_accessor :client, :resource, :bucket_name
 
   def initialize
     credentials = Aws::Credentials.new(
@@ -17,5 +17,6 @@ class S3
       region: 'ap-northeast-1',
       credentials: credentials
     )
+    @bucket_name ||= 'collect-bouquet-bucket'
   end
 end
