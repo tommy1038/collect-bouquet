@@ -1,45 +1,12 @@
+<%= javascript_pack_tag 'App' %>
+
 <div class="mv">
   <%= image_tag 'hero.png' %>
   <p id="page-top" style="display: block;">
     <a href="#"><i class="fas fa-chevron-up"></i></a>
   </p>
   <div class="container">
-    <div class="gridbig">
-      <%= link_to "https://www.beiz.jp/images_T/cherry-blossom/cherry-blossom_00579.jpg", 'data-lightbox': "image", class: "grid" do %>
-        <img src="https://www.beiz.jp/images_T/cherry-blossom/cherry-blossom_00579.jpg">
-      <% end %>
-      <div class="gridtxt">
-        <div class="in-gridtxt"><i class="far fa-smile"></i> 100点</div>
-        散布流太郎
-      </div>
-    </div>
-    <div class="gridbig">
-      <%= link_to "https://girlydrop.com/wp-content/uploads/post/p518.jpg", 'data-lightbox': "image", class: "grid" do %>
-        <img src="https://girlydrop.com/wp-content/uploads/post/p518.jpg">
-      <% end %>
-      <div class="gridtxt">
-        <div class="in-gridtxt"><i class="far fa-smile"></i> 100点</div>
-        散布流太郎
-      </div>
-    </div>
-    <div class="gridbig">
-      <%= link_to "https://girlydrop.com/wp-content/uploads/post/p518.jpg", 'data-lightbox': "image", class: "grid" do %>
-        <img src="https://girlydrop.com/wp-content/uploads/post/p518.jpg">
-      <% end %>
-      <div class="gridtxt">
-        <div class="in-gridtxt"><i class="far fa-smile"></i> 100点</div>
-        散布流太郎
-      </div>
-    </div>
-    <div class="gridbig">
-      <%= link_to "https://www.beiz.jp/images_T/cherry-blossom/cherry-blossom_00579.jpg", 'data-lightbox': "image", class: "grid" do %>
-        <img src="https://www.beiz.jp/images_T/cherry-blossom/cherry-blossom_00579.jpg">
-      <% end %>
-      <div class="gridtxt">
-        <div class="in-gridtxt"><i class="far fa-smile"></i> 100点</div>
-        散布流太郎
-      </div>
-    </div>
+    <div id="react-entries"></div>
   </div>
   <div class="footer">
     ©︎2021 Ryota &amp; Maria Happy Wedding!
