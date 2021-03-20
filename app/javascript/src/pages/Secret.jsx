@@ -8,9 +8,10 @@ export const Secret = () => {
   const [posts, setPage] = SecretPostsApi();
 
   const handleScroll = throttle(() => {
-    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollTop =
+      document.documentElement.scrollTop || document.body.scrollTop;
     if (
-      window.innerHeight + scrollTop + 50 !==
+      window.innerHeight + scrollTop + 50 <
       document.documentElement.offsetHeight
     ) {
       return;

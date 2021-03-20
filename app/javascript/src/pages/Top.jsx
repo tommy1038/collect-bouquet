@@ -8,7 +8,8 @@ export const Top = () => {
   const [posts, setPage] = GeneralPostsApi();
 
   const handleScroll = throttle(() => {
-    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollTop =
+      document.documentElement.scrollTop || document.body.scrollTop;
     if (
       window.innerHeight + scrollTop + 50 <
       document.documentElement.offsetHeight
