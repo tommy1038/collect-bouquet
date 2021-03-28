@@ -8,7 +8,7 @@ export const SecretPostsApi = (offset = 0) => {
     axios
       .get('/api/secret_s3', {
         params: {
-          size: 5,
+          size: 10,
           offset: page * 10,
         },
       })
